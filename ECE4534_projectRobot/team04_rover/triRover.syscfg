@@ -1,0 +1,195 @@
+// These arguments were used when this file was generated. They will be automatically applied on subsequent loads 
+// via the GUI or CLI invocations. Run CLI with '--help' for additional information on how to override these arguments.
+// @cliArgs --board "/ti/boards/CC3220SF_LAUNCHXL" --product "SimpleLinkSDK@3.20.00.06"
+// @versions {"data":"2019051709","timestamp":"2019051709","tool":"1.1.792","templates":"2019051709"}
+
+var RTOS = scripting.addModule("/ti/drivers/RTOS");
+var GPIO = scripting.addModule("/ti/drivers/GPIO");
+var Timer = scripting.addModule("/ti/drivers/Timer");
+var Timer1 = Timer.addInstance();
+var GPIO1 = GPIO.addInstance();
+var GPIO2 = GPIO.addInstance();
+var GPIO3 = GPIO.addInstance();
+var GPIO4 = GPIO.addInstance();
+var GPIO5 = GPIO.addInstance();
+var GPIO6 = GPIO.addInstance();
+var GPIO7 = GPIO.addInstance();
+var GPIO8 = GPIO.addInstance();
+var GPIO9 = GPIO.addInstance();
+var GPIO10 = GPIO.addInstance();
+var SPI = scripting.addModule("/ti/drivers/SPI");
+var SPI1 = SPI.addInstance();
+var UART = scripting.addModule("/ti/drivers/UART");
+var GPIO11 = GPIO.addInstance();
+var GPIO12 = GPIO.addInstance();
+var GPIO13 = GPIO.addInstance();
+var Timer2 = Timer.addInstance();
+var SimpleLinkWifi = scripting.addModule("/ti/drivers/net/wifi/SimpleLinkWifi");
+var Crypto = scripting.addModule("/ti/drivers/Crypto");
+var Crypto1 = Crypto.addInstance();
+var Display = scripting.addModule("/ti/display/Display");
+var Display1 = Display.addInstance();
+var Watchdog = scripting.addModule("/ti/drivers/Watchdog");
+var Watchdog1 = Watchdog.addInstance();
+var UART2 = UART.addInstance();
+var Power = scripting.addModule("/ti/drivers/Power");
+// Name
+Power.parkPins.$name = "ti_drivers_power_PowerCC32XXPins0";
+var Board = scripting.addModule("/ti/drivers/Board");
+// Name - The C/C++ identifier used in applications as the index parameter passed to Timer runtime APIs
+Timer1.$name = "Board_TIMER0";
+// Timer Type
+Timer1.timerType = "32 Bits";
+// Name
+Timer1.timer.$name = "MyTimer1";
+// Name - The C/C++ identifier used in applications as the index parameter passed to GPIO runtime APIs
+GPIO1.$name = "Board_GPIO0";
+// Callback Function - The name of the callback function called when this GPIO pin triggers an interrupt, or 'NULL' if it's specified at runtime
+GPIO1.callbackFunction = "NULL";
+// Name - The C/C++ identifier used in applications as the index parameter passed to GPIO runtime APIs
+GPIO2.$name = "Board_GPIO1";
+// Mode - Select the GPIO mode
+GPIO2.mode = "Output";
+// Use Hardware - Select the hardware to use, or 'none' to use available header pins
+GPIO2.$hardware = system.deviceData.board.components.LED_GREEN;
+// Name - The C/C++ identifier used in applications as the index parameter passed to GPIO runtime APIs
+GPIO3.$name = "Board_GPIO2";
+// Mode - Select the GPIO mode
+GPIO3.mode = "Output";
+// Name - The C/C++ identifier used in applications as the index parameter passed to GPIO runtime APIs
+GPIO4.$name = "Board_GPIO3";
+// Mode - Select the GPIO mode
+GPIO4.mode = "Output";
+// Assign pin
+GPIO4.gpioPin.$assign = "boosterpack.30"; // P50
+// Name - The C/C++ identifier used in applications as the index parameter passed to GPIO runtime APIs
+GPIO5.$name = "Board_GPIO4";
+// Mode - Select the GPIO mode
+GPIO5.mode = "Output";
+// Assign pin
+GPIO5.gpioPin.$assign = "boosterpack.28"; // P53
+// Name - The C/C++ identifier used in applications as the index parameter passed to GPIO runtime APIs
+GPIO6.$name = "Board_GPIO5";
+// Mode - Select the GPIO mode
+GPIO6.mode = "Output";
+// Name - The C/C++ identifier used in applications as the index parameter passed to GPIO runtime APIs
+GPIO7.$name = "Board_GPIO6";
+// Mode - Select the GPIO mode
+GPIO7.mode = "Output";
+// Name - The C/C++ identifier used in applications as the index parameter passed to GPIO runtime APIs
+GPIO8.$name = "Board_GPIO7";
+// Mode - Select the GPIO mode
+GPIO8.mode = "Output";
+// Assign pin
+GPIO8.gpioPin.$assign = "boosterpack.27"; // P63
+// Name - The C/C++ identifier used in applications as the index parameter passed to GPIO runtime APIs
+GPIO9.$name = "Slave_Select0";
+// Mode - Select the GPIO mode
+GPIO9.mode = "Output";
+// Initial Output State
+GPIO9.initialOutputState = "High";
+// Assign pin
+GPIO9.gpioPin.$assign = "boosterpack.18"; // P08
+// Mode - Select the GPIO mode
+GPIO10.mode = "Output";
+// Name - The C/C++ identifier used in applications as the index parameter passed to GPIO runtime APIs
+GPIO10.$name = "Slave_Select1";
+// Initial Output State
+GPIO10.initialOutputState = "High";
+// Assign pin
+GPIO10.gpioPin.$assign = "boosterpack.5"; // P61
+var DMA = scripting.addModule("/ti/drivers/DMA");
+// Name - The C/C++ identifier used in applications as the index parameter passed to SPI runtime APIs
+SPI1.$name = "Board_SPI0";
+// Name
+SPI1.spi.$name = "MySPI1";
+// Mode - Select the GPIO mode
+GPIO11.mode = "Output";
+// Name - The C/C++ identifier used in applications as the index parameter passed to GPIO runtime APIs
+GPIO11.$name = "Slave_Select2";
+// Initial Output State
+GPIO11.initialOutputState = "High";
+// Assign pin
+GPIO11.gpioPin.$assign = "boosterpack.13"; // P21
+// Use Hardware - Select the hardware to use, or 'none' to use available header pins
+GPIO12.$hardware = system.deviceData.board.components.LED_RED;
+// Name - The C/C++ identifier used in applications as the index parameter passed to GPIO runtime APIs
+GPIO12.$name = "Board_LED_RED";
+// Name - The C/C++ identifier used in applications as the index parameter passed to GPIO runtime APIs
+GPIO13.$name = "Board_Button_SW3";
+// Use Hardware - Select the hardware to use, or 'none' to use available header pins
+GPIO13.$hardware = system.deviceData.board.components.SW2;
+// Assign pin
+GPIO13.gpioPin.$assign = "boosterpack.3"; // P04
+// Name - The C/C++ identifier used in applications as the index parameter passed to Timer runtime APIs
+Timer2.$name = "Board_TIMER1";
+// Timer Type
+Timer2.timerType = "32 Bits";
+// Name
+Timer2.timer.$name = "MyTimer1";
+// Name - The C/C++ identifier used in applications as the index parameter passed to Crypto runtime APIs
+Crypto1.$name = "Board_Crypto0";
+// Name - The C/C++ identifier used in applications as the index parameter passed to Display runtime APIs
+Display1.$name = "Board_Display0";
+// Use Hardware - Select the hardware to use, or 'none' to use available header pins
+Display1.$hardware = system.deviceData.board.components.xds110Uart;
+// Name - The C/C++ identifier used in applications as the index parameter passed to UART runtime APIs
+Display1.uart.$name = "Board_UART0";
+// Use DMA
+Display1.uart.useDMA = true;
+// Name
+Display1.uart.uart.$name = "MyUART1";
+// Name - The C/C++ identifier used in applications as the index parameter passed to Watchdog runtime APIs
+Watchdog1.$name = "Board_WATCHDOG0";
+// Name
+Watchdog1.watchdog.$name = "MyWATCHDOG1";
+// Name - The C/C++ identifier used in applications as the index parameter passed to UART runtime APIs
+UART2.$name = "Board_UART1";
+// Data Direction
+UART2.dataDirection = "Send Only";
+// Name
+UART2.uart.$name = "MyUART1";
+// Assign pin
+UART2.uart.txPin.$assign = "boosterpack.4"; // P03
+// Suggest solution
+Timer1.timer.$suggestSolution = "Timer1";
+// Suggest solution
+GPIO1.gpioPin.$suggestSolution = "18";
+// Suggest solution
+GPIO2.gpioPin.$suggestSolution = "2";
+// Suggest solution
+GPIO3.gpioPin.$suggestSolution = "45";
+// Suggest solution
+GPIO6.gpioPin.$suggestSolution = "58";
+// Suggest solution
+GPIO7.gpioPin.$suggestSolution = "59";
+// Suggest solution
+SPI1.spi.$suggestSolution = "SPI0";
+// Suggest solution
+SPI1.spi.sclkPin.$suggestSolution = "5";
+// Suggest solution
+SPI1.spi.misoPin.$suggestSolution = "6";
+// Suggest solution
+SPI1.spi.mosiPin.$suggestSolution = "7";
+// Suggest solution
+SPI1.spi.dmaRxChannel.$suggestSolution = "UDMA_CH30";
+// Suggest solution
+SPI1.spi.dmaTxChannel.$suggestSolution = "UDMA_CH31";
+// Suggest solution
+GPIO12.gpioPin.$suggestSolution = "64";
+// Suggest solution
+Timer2.timer.$suggestSolution = "Timer0";
+// Suggest solution
+Display1.uart.uart.$suggestSolution = "UART1";
+// Suggest solution
+Display1.uart.uart.txPin.$suggestSolution = "55";
+// Suggest solution
+Display1.uart.uart.rxPin.$suggestSolution = "57";
+// Suggest solution
+Display1.uart.uart.txDmaChannel.$suggestSolution = "UDMA_CH11";
+// Suggest solution
+Display1.uart.uart.rxDmaChannel.$suggestSolution = "UDMA_CH10";
+// Suggest solution
+Watchdog1.watchdog.$suggestSolution = "WATCHDOG0";
+// Suggest solution
+UART2.uart.$suggestSolution = "UART0";
